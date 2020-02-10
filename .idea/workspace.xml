@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43d950e7-079c-4401-9e20-2313ce47002a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/dataset/Neural.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/Neural.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/best_weights.hdf5" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/ShapeSet/best_weights.hdf5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/ShapeSet/image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/model_architecture.json" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/ShapeSet/model_architecture.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataset/model_weights.h5" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/ShapeSet/model_weights.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/Neural.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/ShapeSetNeural.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/ShapeSet/image.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/ShapeSet/image.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dataset/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,13 +25,13 @@
         <counts>
           <entry key="h5" value="1" />
           <entry key="json" value="1" />
-          <entry key="png" value="17" />
+          <entry key="png" value="19" />
           <entry key="py" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="17" />
+          <entry key="Image" value="19" />
           <entry key="JSON" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Python" value="4" />
@@ -41,11 +39,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="38" />
           <entry key="py" value="1953" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="PLAIN_TEXT" value="38" />
           <entry key="Python" value="1953" />
         </counts>
       </usages-collector>
@@ -53,29 +53,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataset/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="74" lean-forward="true" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
+            <state relative-caret-position="255">
+              <caret line="27" column="74" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <marker date="1581338173359" expanded="true" signature="434:674" ph="..." />
-                <marker date="1581338173359" expanded="true" signature="715:930" ph="..." />
+                <marker date="1581338672201" expanded="true" signature="442:682" ph="..." />
+                <marker date="1581338672201" expanded="true" signature="723:938" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataset/Neural.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dataset/ShapeSetNeural.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="190" column="63" selection-start-line="190" selection-start-column="63" selection-end-line="190" selection-end-column="63" />
+            <state relative-caret-position="323">
+              <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1581338045073" expanded="true" signature="4565:4570" ph="..." />
-                <marker date="1581338045073" expanded="true" signature="4932:4933" ph="..." />
+                <marker date="1581338312384" expanded="true" signature="4565:4570" ph="..." />
+                <marker date="1581338312384" expanded="true" signature="4932:4933" ph="..." />
               </folding>
             </state>
           </provider>
@@ -96,7 +96,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UnderstandableAi/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
+            <state relative-caret-position="1802">
               <caret line="106" column="23" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
             </state>
           </provider>
@@ -112,8 +112,8 @@
       <list>
         <option value="$PROJECT_DIR$/UnderstandableAi/settings.py" />
         <option value="$PROJECT_DIR$/UnderstandableAi/urls.py" />
-        <option value="$PROJECT_DIR$/dataset/Neural.py" />
         <option value="$PROJECT_DIR$/dataset/views.py" />
+        <option value="$PROJECT_DIR$/dataset/Neural.py" />
       </list>
     </option>
   </component>
@@ -189,7 +189,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataset/Neural.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\20174176\Desktop\UnderstandableAi\dataset\ShapeSetNeural.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -246,11 +246,11 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.32907802" />
       <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49966952" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Terminal" sideWeight="0.49966952" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50033045" side_tool="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -276,36 +276,29 @@
     <entry file="file://$PROJECT_DIR$/dataset/ShapeSet/model_architecture.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/shapes/test_set/triangles/drawing(13).png">
+    <entry file="file://$PROJECT_DIR$/dataset/ShapeSet/shapes/test_set/triangles/drawing(13).png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/shapes/test_set/triangles/drawing(93).png">
+    <entry file="file://$PROJECT_DIR$/dataset/ShapeSet/shapes/test_set/triangles/drawing(93).png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/shapes/test_set/circles/drawing(53).png">
+    <entry file="file://$PROJECT_DIR$/dataset/ShapeSet/shapes/test_set/circles/drawing(53).png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/shapes/test_set/circles/drawing(77).png">
+    <entry file="file://$PROJECT_DIR$/dataset/ShapeSet/shapes/test_set/circles/drawing(77).png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/shapes/test_set/triangles/drawing(2).png">
+    <entry file="file://$PROJECT_DIR$/dataset/ShapeSet/shapes/test_set/triangles/drawing(2).png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dataset/ShapeSet/image.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/shapes/test_set/triangles/drawing(50).png">
+    <entry file="file://$PROJECT_DIR$/dataset/ShapeSet/shapes/test_set/triangles/drawing(50).png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/shapes/test_set/triangles/drawing(3).png">
+    <entry file="file://$PROJECT_DIR$/dataset/ShapeSet/shapes/test_set/triangles/drawing(3).png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UnderstandableAi/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="106" column="23" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UnderstandableAi/urls.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -317,26 +310,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/Neural.py">
+    <entry file="file://$PROJECT_DIR$/UnderstandableAi/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="190" column="63" selection-start-line="190" selection-start-column="63" selection-end-line="190" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <marker date="1581338045073" expanded="true" signature="4565:4570" ph="..." />
-            <marker date="1581338045073" expanded="true" signature="4932:4933" ph="..." />
-          </folding>
+        <state relative-caret-position="1802">
+          <caret line="106" column="23" selection-start-line="106" selection-start-column="23" selection-end-line="106" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataset/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="74" lean-forward="true" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
+        <state relative-caret-position="255">
+          <caret line="27" column="74" selection-start-line="27" selection-start-column="74" selection-end-line="27" selection-end-column="74" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-            <marker date="1581338173359" expanded="true" signature="434:674" ph="..." />
-            <marker date="1581338173359" expanded="true" signature="715:930" ph="..." />
+            <marker date="1581338672201" expanded="true" signature="442:682" ph="..." />
+            <marker date="1581338672201" expanded="true" signature="723:938" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/ShapeSet/shapes/test_set/circles/drawing(3).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/ShapeSet/shapes/test_set/circles/drawing(1).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/ShapeSetNeural.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1581338312384" expanded="true" signature="4565:4570" ph="..." />
+            <marker date="1581338312384" expanded="true" signature="4932:4933" ph="..." />
           </folding>
         </state>
       </provider>

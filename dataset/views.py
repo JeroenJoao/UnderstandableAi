@@ -4,7 +4,7 @@ from PIL import Image
 from django.http import JsonResponse, HttpResponse, HttpResponseNotFound
 
 from UnderstandableAi.settings import BASE_DIR
-from dataset.Neural import getLayerPlot
+from dataset.ShapeSetNeural import getLayerPlot
 
 def index(request, picnum, shapes, layer):
     if(layer == '0'):
