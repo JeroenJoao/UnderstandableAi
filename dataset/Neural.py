@@ -164,7 +164,7 @@ def getLayerPlot(drawNum,shape):
         layer_names.append(layer.name)  # Names of the layers, so you can have them as part of your plot
 
     #print(layer_names)
-    images_per_row = 16
+    images_per_row = 8
 
     for layer_name, layer_activation in zip(layer_names, activations):  # Displays the feature maps
         n_features = layer_activation.shape[-1]  # Number of features in the feature map
@@ -190,6 +190,3 @@ def getLayerPlot(drawNum,shape):
         plt.grid(False)
         plt.imshow(display_grid, aspect='auto', cmap='viridis')
         plt.savefig(os.path.join(BASE_DIR,'dataset/image.png'))
-
-
-#getLayerPlot(50)

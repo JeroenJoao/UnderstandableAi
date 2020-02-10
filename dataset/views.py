@@ -21,12 +21,14 @@ def responseNormal(picnum, shapes):
     img.save(response, 'png')
     return response
 
+
 def responseLayer(picnum, shapes, layer):
     getLayerPlot(picnum, shapes)
     response = HttpResponse(content_type="image/png")
     img = Image.open(os.path.join(BASE_DIR, 'dataset\\image.png'))
     img.save(response, 'png')
     return response
+
 
 def createJson(a):
     json = {}
