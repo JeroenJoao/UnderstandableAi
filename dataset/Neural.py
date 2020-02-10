@@ -125,9 +125,9 @@ def neuralCreate():
 
 
 def loadModel():
-    path_model = os.path.join(BASE_DIR, 'dataset/model_architecture.json')
+    path_model = os.path.join(BASE_DIR, 'dataset/ShapeSet/model_architecture.json')
     model = model_from_json(open(path_model).read())
-    path_weights = os.path.join(BASE_DIR, 'dataset/model_weights.h5')
+    path_weights = os.path.join(BASE_DIR, 'dataset/ShapeSet/model_weights.h5')
     model.load_weights(path_weights)
     model.compile(optimizer = 'rmsprop',
                        loss = 'categorical_crossentropy',
@@ -138,7 +138,7 @@ def loadModel():
 def getLayerPlot(drawNum,shape):
     model = loadModel() # load saved model
 
-    img_path = os.path.join(BASE_DIR,'dataset/shapes/test_set/' + str(shape) + '/drawing(' + str(drawNum) + ').png')
+    img_path = os.path.join(BASE_DIR,'dataset/ShapeSet/shapes/test_set/' + str(shape) + '/drawing(' + str(drawNum) + ').png')
 
     img = image.load_img(img_path, target_size=(28, 28))
     img_tensor = image.img_to_array(img)
@@ -189,4 +189,4 @@ def getLayerPlot(drawNum,shape):
         plt.title(layer_name)
         plt.grid(False)
         plt.imshow(display_grid, aspect='auto', cmap='viridis')
-        plt.savefig(os.path.join(BASE_DIR,'dataset/image.png'))
+        plt.savefig(os.path.join(BASE_DIR,'dataset/ShapeSet/image.png'))
