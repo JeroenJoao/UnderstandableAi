@@ -6,8 +6,17 @@ from django.http import JsonResponse, HttpResponse, HttpResponseNotFound
 from UnderstandableAi.settings import BASE_DIR
 from dataset.ShapeSetNeural import getLayerPlot
 
-def index(request, picnum, shapes, layer):
-    if(layer == '0'):
+def index(request,dataset, picnum, shapes, layer):
+    if dataset == 'shapeset':
+        response = shapeSet(picnum,shapes,layer)
+    else:
+        response = HttpResponseNotFound
+
+    return response
+
+
+def shapeSet(picnum, shapes, layer):
+    if (layer == '0'):
         response = responseNormal(picnum, shapes)
     else:
         response = responseLayer(picnum, shapes, layer)
