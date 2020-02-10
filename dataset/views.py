@@ -4,7 +4,7 @@ from PIL import Image
 from django.http import JsonResponse, HttpResponse, HttpResponseNotFound
 
 from UnderstandableAi.settings import BASE_DIR
-from dataset.Neural import getLayerPlot
+from dataset.ShapeSetNeural import getLayerPlot
 
 def index(request, picnum, shapes, layer):
     if(layer == '0'):
@@ -17,16 +17,18 @@ def index(request, picnum, shapes, layer):
 
 def responseNormal(picnum, shapes):
     response = HttpResponse(content_type="image/png")
-    img = Image.open(os.path.join(BASE_DIR,'dataset/shapes/test_set/' + str(shapes) + '/drawing(' + str(picnum) + ').png'))
+    img = Image.open(os.path.join(BASE_DIR,'dataset/ShapeSet/shapes/test_set/' + str(shapes) + '/drawing(' + str(picnum) + ').png'))
     img.save(response, 'png')
     return response
+
 
 def responseLayer(picnum, shapes, layer):
     getLayerPlot(picnum, shapes)
     response = HttpResponse(content_type="image/png")
-    img = Image.open(os.path.join(BASE_DIR, 'dataset\\image.png'))
+    img = Image.open(os.path.join(BASE_DIR, 'dataset/ShapeSet/image.png'))
     img.save(response, 'png')
     return response
+
 
 def createJson(a):
     json = {}
