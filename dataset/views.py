@@ -1,15 +1,32 @@
-from django.http import JsonResponse
+import os
 
-def index(request, num, vistype):
-    data = startCalc(num, vistype)
+from PIL import Image
+from django.http import JsonResponse, HttpResponse, HttpResponseNotFound
 
-    return JsonResponse(createJson(data))
+from UnderstandableAi.settings import BASE_DIR
+from dataset.Neural import getLayerPlot
 
-def startCalc(a, b):
-    int(a), int(b)
-    num1 = int(a) * int(b)
-    num2 = int(a) + int(b)
-    return [a, b]
+def index(request, picnum, shapes, layer):
+    if(layer == '0'):
+        response = responseNormal(picnum, shapes)
+    else:
+        response = responseLayer(picnum, shapes, layer)
+
+    return response
+
+
+def responseNormal(picnum, shapes):
+    response = HttpResponse(content_type="image/png")
+    img = Image.open(os.path.join(BASE_DIR,'dataset/shapes/test_set/' + str(shapes) + '/drawing(' + str(picnum) + ').png'))
+    img.save(response, 'png')
+    return response
+
+def responseLayer(picnum, shapes, layer):
+    getLayerPlot(picnum, shapes)
+    response = HttpResponse(content_type="image/png")
+    img = Image.open(os.path.join(BASE_DIR, 'dataset\\image.png'))
+    img.save(response, 'png')
+    return response
 
 def createJson(a):
     json = {}

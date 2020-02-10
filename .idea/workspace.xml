@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="43d950e7-079c-4401-9e20-2313ce47002a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnderstandableAi/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnderstandableAi/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/Neural.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/Neural.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(100).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(11).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(13).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(14).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(16).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(17).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(18).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(19).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(20).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(21).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(22).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(23).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(24).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(25).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(26).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(27).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(28).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(29).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(30).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(31).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(32).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(33).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(34).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(35).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(36).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(37).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(38).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(39).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(40).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(41).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(42).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(43).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(44).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(45).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(46).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(47).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(48).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(49).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(50).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(51).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(52).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(53).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(54).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(55).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(56).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(57).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(58).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(59).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(60).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(61).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(62).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(63).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(64).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(65).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(66).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(67).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(68).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(69).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(70).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(71).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(72).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(73).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(74).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(75).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(76).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(77).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(78).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(79).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(80).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(81).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(82).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(83).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(84).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(85).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(86).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(87).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(88).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(89).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(90).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(91).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(92).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(93).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(94).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(95).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(96).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(97).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(98).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/circles/drawing(99).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(100).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(11).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(13).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(14).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(16).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(17).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(18).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(19).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(20).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(21).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(22).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(23).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(24).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(25).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(26).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(27).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(28).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(29).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(30).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(31).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(32).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(33).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(34).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(35).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(36).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(37).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(38).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(39).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(40).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(41).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(42).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(43).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(44).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(45).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(46).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(47).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(48).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(49).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(50).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(51).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(52).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(53).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(54).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(55).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(56).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(57).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(58).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(59).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(60).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(61).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(62).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(63).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(64).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(65).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(66).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(67).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(68).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(69).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(70).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(71).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(72).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(73).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(74).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(75).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(76).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(77).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(78).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(79).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(80).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(81).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(82).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(83).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(84).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(85).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(86).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(87).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(88).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(89).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(90).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(91).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(92).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(93).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(94).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(95).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(96).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(97).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(98).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/circles/drawing(99).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(100).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(11).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(13).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(14).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(16).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(17).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(18).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(19).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(20).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(21).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(22).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(23).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(24).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(25).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(26).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(27).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(28).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(29).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(30).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(31).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(32).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(33).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(34).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(35).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(36).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(37).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(38).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(39).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(40).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(41).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(42).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(43).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(44).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(45).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(46).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(47).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(48).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(49).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(50).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(51).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(52).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(53).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(54).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(55).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(56).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(57).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(58).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(59).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(60).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(61).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(62).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(63).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(64).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(65).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(66).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(67).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(68).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(69).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(70).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(71).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(72).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(73).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(74).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(75).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(76).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(77).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(78).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(79).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(80).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(81).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(82).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(83).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(84).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(85).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(86).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(87).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(88).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(89).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(90).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(91).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(92).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(93).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(94).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(95).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(96).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(97).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(98).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/squares/drawing(99).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(100).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(11).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(13).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(14).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(16).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(17).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(18).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(19).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(20).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(21).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(22).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(23).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(24).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(25).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(26).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(27).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(28).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(29).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(30).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(31).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(32).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(33).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(34).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(35).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(36).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(37).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(38).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(39).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(40).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(41).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(42).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(43).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(44).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(45).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(46).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(47).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(48).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(49).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(50).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(51).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(52).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(53).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(54).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(55).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(56).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(57).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(58).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(59).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(60).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(61).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(62).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(63).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(64).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(65).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(66).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(67).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(68).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(69).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(70).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(71).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(72).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(73).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(74).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(75).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(76).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(77).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(78).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(79).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(80).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(81).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(82).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(83).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(84).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(85).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(86).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(87).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(88).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(89).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(90).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(91).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(92).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(93).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(94).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(95).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(96).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(97).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(98).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/shapes/triangles/drawing(99).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(100).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(11).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(13).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(14).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(16).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(17).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(18).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(19).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(20).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(21).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(22).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(23).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(24).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(25).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(26).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(27).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(28).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(29).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(30).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(31).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(32).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(33).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(34).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(35).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(36).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(37).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(38).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(39).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(40).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(41).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(42).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(43).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(44).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(45).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(46).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(47).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(48).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(49).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(50).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(51).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(52).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(53).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(54).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(55).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(56).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(57).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(58).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(59).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(60).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(61).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(62).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(63).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(64).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(65).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(66).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(67).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(68).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(69).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(70).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(71).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(72).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(73).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(74).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(75).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(76).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(77).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(78).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(79).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(80).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(81).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(82).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(83).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(84).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(85).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(86).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(87).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(88).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(89).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(90).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(91).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(92).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(93).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(94).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(95).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(96).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(97).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(98).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/squares/drawing(99).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(1).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(10).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(100).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(11).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(12).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(13).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(14).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(15).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(16).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(17).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(18).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(19).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(2).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(20).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(21).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(22).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(23).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(24).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(25).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(26).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(27).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(28).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(29).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(3).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(30).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(31).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(32).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(33).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(34).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(35).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(36).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(37).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(38).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(39).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(4).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(40).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(41).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(42).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(43).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(44).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(45).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(46).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(47).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(48).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(49).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(5).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(50).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(51).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(52).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(53).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(54).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(55).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(56).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(57).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(58).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(59).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(6).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(60).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(61).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(62).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(63).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(64).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(65).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(66).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(67).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(68).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(69).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(7).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(70).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(71).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(72).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(73).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(74).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(75).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(76).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(77).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(78).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(79).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(8).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(80).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(81).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(82).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(83).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(84).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(85).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(86).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(87).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(88).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(89).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(9).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(90).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(91).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(92).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(93).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(94).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(95).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(96).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(97).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(98).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/shapes/triangles/drawing(99).png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/dataset/views.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="969711905">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="h5" value="1" />
+          <entry key="json" value="1" />
+          <entry key="png" value="17" />
+          <entry key="py" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Image" value="17" />
+          <entry key="JSON" value="1" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Python" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="1914" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="1914" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dataset/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+                <marker date="1581335545968" expanded="true" signature="433:663" ph="..." />
+                <marker date="1581335545968" expanded="true" signature="704:910" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataset/Neural.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="140" column="52" selection-start-line="140" selection-end-line="141" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1581333822923" expanded="true" signature="4556:4561" ph="..." />
+                <marker date="1581333822923" expanded="true" signature="4914:4915" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UnderstandableAi/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UnderstandableAi/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/UnderstandableAi/settings.py" />
+        <option value="$PROJECT_DIR$/dataset/Neural.py" />
+        <option value="$PROJECT_DIR$/UnderstandableAi/urls.py" />
+        <option value="$PROJECT_DIR$/dataset/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="UnderstandableAi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnderstandableAi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnderstandableAi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnderstandableAi" type="462c0819:PsiDirectoryNode" />
+              <item name="dataset" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnderstandableAi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnderstandableAi" type="462c0819:PsiDirectoryNode" />
+              <item name="dataset" type="462c0819:PsiDirectoryNode" />
+              <item name="shapes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnderstandableAi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnderstandableAi" type="462c0819:PsiDirectoryNode" />
+              <item name="dataset" type="462c0819:PsiDirectoryNode" />
+              <item name="shapes" type="462c0819:PsiDirectoryNode" />
+              <item name="test_set" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UnderstandableAi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UnderstandableAi" type="462c0819:PsiDirectoryNode" />
+              <item name="UnderstandableAi" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/20174176/Desktop/UnderstandableAi/UnderstandableAi/urls.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\20174176\Desktop\UnderstandableAi\dataset" />
+      <recent name="C:\Users\20174176\Desktop\UnderstandableAi\dataset\migrations" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.Neural">
+    <configuration name="Neural" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="UnderstandableAi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataset" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataset/Neural.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="views" type="PythonConfigurationType" factoryName="Python">
+      <module name="UnderstandableAi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataset" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataset/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.Neural" />
+      <item itemvalue="Python.views" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Neural" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="43d950e7-079c-4401-9e20-2313ce47002a" name="Default Changelist" comment="" />
+      <created>1581093170443</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581093170443</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24983476" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32907802" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info active="true" anchor="bottom" id="Terminal" sideWeight="0.49966952" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50033045" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40709218" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dataset/model_weights.h5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1088" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/model_architecture.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/shapes/test_set/triangles/drawing(13).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/shapes/test_set/triangles/drawing(93).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnderstandableAi/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/shapes/test_set/circles/drawing(53).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/shapes/test_set/circles/drawing(77).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/shapes/test_set/triangles/drawing(2).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/image.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/shapes/test_set/triangles/drawing(50).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnderstandableAi/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/Neural.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="140" column="52" selection-start-line="140" selection-end-line="141" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1581333822923" expanded="true" signature="4556:4561" ph="..." />
+            <marker date="1581333822923" expanded="true" signature="4914:4915" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/shapes/test_set/triangles/drawing(3).png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+            <marker date="1581335545968" expanded="true" signature="433:663" ph="..." />
+            <marker date="1581335545968" expanded="true" signature="704:910" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

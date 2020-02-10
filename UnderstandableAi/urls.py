@@ -19,6 +19,6 @@ from dataset import views
 
 
 urlpatterns = [
-    path('dataset/<num>/<vistype>/', views.index),
+    path('dataset/<shapes>/<layer>/<picnum>/', views.index),
     path('admin/', admin.site.urls),
 ]
