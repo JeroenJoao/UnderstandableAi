@@ -1,10 +1,12 @@
 import glob
 import os
+
+import matplotlib
 from matplotlib import pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
-from PIL import Image
-from tensorflow import keras
+import imageio as im
+from keras import models
 from keras.models import Sequential
 from keras.layers import Conv2D
 from keras.layers import MaxPooling2D
@@ -133,12 +135,12 @@ def loadModel():
     return model
 
 
-def getLayerPlot(drawNum,shape,layerNum):
-    model = keras.applications.VGG16(weights='imagenet', include_top = 'False')
+def getLayerPlot(drawNum,shape):
+    model = loadModel() # load saved model
 
     img_path = os.path.join(BASE_DIR,'dataset/ShapeSet/shapes/test_set/' + str(shape) + '/drawing(' + str(drawNum) + ').png')
 
-    img = image.load_img(img_path, target_size=(224, 224))
+    img = image.load_img(img_path, target_size=(28, 28))
     img_tensor = image.img_to_array(img)
     img_tensor = np.expand_dims(img_tensor, axis=0)
     img_tensor /= 255.
@@ -146,15 +148,19 @@ def getLayerPlot(drawNum,shape,layerNum):
     x = image.img_to_array(img)
     x = np.expand_dims(x, axis=0)
 
-    layer_outputs = [layer.output for layer in model.layers][1:] # Extracts the outputs of the top 12 layers
-    activation_model = keras.models.Model(inputs=model.input, outputs=layer_outputs) # Creates a model that will return these outputs, given the model input
+    images = np.vstack([x])
+    classes = model.predict_classes(images, batch_size=10)
+    #print("Predicted class is:",classes)
+
+    layer_outputs = [layer.output for layer in model.layers[:12]] # Extracts the outputs of the top 12 layers
+    activation_model = models.Model(inputs=model.input, outputs=layer_outputs) # Creates a model that will return these outputs, given the model input
     activations = activation_model.predict(img_tensor) # Returns a list of five Numpy arrays: one array per layer activation
     first_layer_activation = activations[0]
 
     plt.matshow(first_layer_activation[0, :, :, 4], cmap='viridis')
 
     layer_names = []
-    for layer in model.layers[:int(layerNum)]:
+    for layer in model.layers[:1]:
         layer_names.append(layer.name)  # Names of the layers, so you can have them as part of your plot
 
     #print(layer_names)
@@ -183,7 +189,4 @@ def getLayerPlot(drawNum,shape,layerNum):
         plt.title(layer_name)
         plt.grid(False)
         plt.imshow(display_grid, aspect='auto', cmap='viridis')
-    plt.savefig(os.path.join(BASE_DIR,'dataset/ShapeSet/image.png'))
-
-
-#getLayerPlot(1,'triangles',5)
+        plt.savefig(os.path.join(BASE_DIR,'dataset/ShapeSet/image.png'))
