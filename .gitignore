@@ -1,5 +1,12 @@
 # Created by https://www.gitignore.io
 
+bin/*
+bin/
+bin
+lib64
+pyvenv.cfg
+
+
 ### OSX ###
 .DS_Store
 .AppleDouble
