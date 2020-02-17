@@ -13,7 +13,7 @@ from UnderstandableAi.settings import BASE_DIR
 def getSaliency(img):
 
     model = VGG16(weights='imagenet', include_top = 'False')
-
+    
     CLASS_INDEX = json.load(open(os.path.join(BASE_DIR, "dataset/ResNetSet/imagenet_class_index.json")))
     classlabel = []
     for i_dict in range(len(CLASS_INDEX)):
