@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from dataset import views
+import dataset.views, upload.views
+
 
 
 urlpatterns = [
-    path('dataset/<shapes>/<layer>/<picnum>/', views.index),
+    path('dataset/<dataset>/<shapes>/<layer>/<picnum>/<saliency>/', dataset.views.index),
+    path('upload/', upload.views.index),
     path('admin/', admin.site.urls),
 ]

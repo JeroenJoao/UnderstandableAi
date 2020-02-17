@@ -4,10 +4,55 @@ from PIL import Image
 from django.http import JsonResponse, HttpResponse, HttpResponseNotFound
 
 from UnderstandableAi.settings import BASE_DIR
-from dataset.ShapeSetNeural import getLayerPlot
+from dataset import ShapeSetNeural
+from dataset import ResNetNeural
+from dataset import saliency
 
-def index(request, picnum, shapes, layer):
-    if(layer == '0'):
+def index(request,dataset, picnum, shapes, layer, saliency):
+    if dataset == 'shapeset':
+        response = shapeSet(picnum,shapes,layer, saliency)
+    elif dataset == 'imagenet':
+        response = ImageNet(picnum, layer, saliency)
+    else:
+        response = HttpResponseNotFound
+
+    return response
+
+def ImageNet(img, layer, saliency):
+    if saliency == '1':
+        response = responseSaliency(img)
+    else:
+        if (layer == '0'):
+            response = responseNormalImageNet(img)
+        else:
+            response = responseLayerImageNet(img, layer)
+    return response
+
+def responseSaliency(img):
+    saliency.getSaliency(img)
+    response = HttpResponse(content_type="image/png")
+    img = Image.open(
+        os.path.join(BASE_DIR, 'dataset/ResNetSet/image2.png'))
+    img.save(response, 'png')
+    return response
+
+def responseNormalImageNet(img):
+    response = HttpResponse(content_type="image/png")
+    img = Image.open(
+        os.path.join(BASE_DIR, 'dataset/ResNetSet/' + str(img) + '.png'))
+    img.save(response, 'png')
+    return response
+
+def responseLayerImageNet(img, layer):
+    ResNetNeural.getLayerPlot(img,layer)
+    response = HttpResponse(content_type="image/png")
+    img = Image.open(os.path.join(BASE_DIR, 'dataset/ResNetSet/image.png'))
+    img.save(response, 'png')
+    return response
+
+def shapeSet(picnum, shapes, layer, saliency):
+
+    if (layer == '0'):
         response = responseNormal(picnum, shapes)
     else:
         response = responseLayer(picnum, shapes, layer)
@@ -23,7 +68,7 @@ def responseNormal(picnum, shapes):
 
 
 def responseLayer(picnum, shapes, layer):
-    getLayerPlot(picnum, shapes)
+    ShapeSetNeural.getLayerPlot(picnum, shapes,layer)
     response = HttpResponse(content_type="image/png")
     img = Image.open(os.path.join(BASE_DIR, 'dataset/ShapeSet/image.png'))
     img.save(response, 'png')

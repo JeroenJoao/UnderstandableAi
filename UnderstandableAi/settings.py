@@ -25,7 +25,7 @@ SECRET_KEY = 'p7tw_b_3m43_z52gtr()l8c$7#s94t%qb9pvhpm_q1yt224kgl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'dataset',
+    'upload',
 ]
 
 MIDDLEWARE = [
