@@ -2,12 +2,14 @@ import os
 from matplotlib import pyplot as plt
 from tensorflow import keras
 import numpy as np
+from keras import backend as K
 
 from keras.preprocessing import image
 
 from UnderstandableAi.settings import BASE_DIR
 
 def getLayerPlot(img, layer):
+    K.clear_session()
     model = keras.applications.VGG16(weights='imagenet', include_top = 'False')
 
 
@@ -61,3 +63,4 @@ def getLayerPlot(img, layer):
         plt.grid(False)
         plt.imshow(display_grid, aspect='auto', cmap='viridis')
     plt.savefig(os.path.join(BASE_DIR, 'dataset/ResNetSet/image.png'))
+    K.clear_session()

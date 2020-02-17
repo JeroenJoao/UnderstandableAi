@@ -8,9 +8,10 @@ from kerasvismaster.vis.utils import utils
 import os
 import numpy as np
 from UnderstandableAi.settings import BASE_DIR
-
+from keras import backend as K
 
 def getSaliency(img):
+    K.clear_session()
 
     model = VGG16(weights='imagenet', include_top = 'False')
     
@@ -55,5 +56,7 @@ def getSaliency(img):
         #plt.show()
         plt.savefig(os.path.join(BASE_DIR, 'dataset/ResNetSet/image2.png'))
     plot_map(grad_top1)
+    K.clear_session()
+
 
 #getSaliency('a')
