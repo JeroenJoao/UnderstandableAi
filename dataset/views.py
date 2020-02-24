@@ -8,15 +8,18 @@ from dataset import ShapeSetNeural
 from dataset import ResNetNeural
 from dataset import saliency
 
-def index(request,dataset, picnum, shapes, layer, saliency):
-    if dataset == 'shapeset':
-        response = shapeSet(picnum,shapes,layer, saliency)
-    elif dataset == 'imagenet':
-        response = ImageNet(picnum, layer, saliency)
-    else:
-        response = HttpResponseNotFound
 
+def index(request,dataset, picname, upload, layer, saliency):
+    if upload == '1':
+        picname = 'uploads/' + picname
+    if dataset == 'shapeset':
+        response = shapeSet(picname, layer, saliency)
+    elif dataset == 'imagenet':
+        response = ImageNet(picname, layer, saliency)
+    else:
+        response = HttpResponseNotFound()
     return response
+
 
 def ImageNet(img, layer, saliency):
     if saliency == '1':
@@ -28,6 +31,7 @@ def ImageNet(img, layer, saliency):
             response = responseLayerImageNet(img, layer)
     return response
 
+
 def responseSaliency(img):
     saliency.getSaliency(img)
     response = HttpResponse(content_type="image/png")
@@ -36,12 +40,14 @@ def responseSaliency(img):
     img.save(response, 'png')
     return response
 
+
 def responseNormalImageNet(img):
     response = HttpResponse(content_type="image/png")
     img = Image.open(
         os.path.join(BASE_DIR, 'dataset/ResNetSet/' + str(img) + '.png'))
     img.save(response, 'png')
     return response
+
 
 def responseLayerImageNet(img, layer):
     ResNetNeural.getLayerPlot(img,layer)
@@ -50,35 +56,28 @@ def responseLayerImageNet(img, layer):
     img.save(response, 'png')
     return response
 
-def shapeSet(picnum, shapes, layer, saliency):
+
+
+def shapeSet(picnum, layer, saliency):
 
     if (layer == '0'):
-        response = responseNormal(picnum, shapes)
+        response = responseNormal(picnum)
     else:
-        response = responseLayer(picnum, shapes, layer)
+        response = responseLayer(picnum, layer)
 
     return response
 
 
-def responseNormal(picnum, shapes):
+def responseNormal(picname):
     response = HttpResponse(content_type="image/png")
-    img = Image.open(os.path.join(BASE_DIR,'dataset/ShapeSet/shapes/test_set/' + str(shapes) + '/drawing(' + str(picnum) + ').png'))
+    img = Image.open(os.path.join(BASE_DIR,'dataset/ShapeSet/shapes/' + picname + '.png' ))
     img.save(response, 'png')
     return response
 
 
-def responseLayer(picnum, shapes, layer):
-    ShapeSetNeural.getLayerPlot(picnum, shapes,layer)
+def responseLayer(imgname, layer):
+    ShapeSetNeural.getLayerPlot(imgname, layer)
     response = HttpResponse(content_type="image/png")
     img = Image.open(os.path.join(BASE_DIR, 'dataset/ShapeSet/image.png'))
     img.save(response, 'png')
     return response
-
-
-def createJson(a):
-    json = {}
-    count = 0
-    for i in a:
-        json[str(count)] = i
-        count+=1
-    return json

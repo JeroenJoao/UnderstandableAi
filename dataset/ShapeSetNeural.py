@@ -134,10 +134,10 @@ def loadModel():
     return model
 
 
-def getLayerPlot(drawNum,shape,layerNum):
+def getLayerPlot(img, layerNum):
     model = keras.applications.VGG16(weights='imagenet', include_top = 'False')
 
-    img_path = os.path.join(BASE_DIR,'dataset/ShapeSet/shapes/test_set/' + str(shape) + '/drawing(' + str(drawNum) + ').png')
+    img_path = os.path.join(BASE_DIR,'dataset/ShapeSet/shapes/' + str(img) + '.png')
 
     img = image.load_img(img_path, target_size=(224, 224))
     img_tensor = image.img_to_array(img)
@@ -187,4 +187,4 @@ def getLayerPlot(drawNum,shape,layerNum):
     plt.savefig(os.path.join(BASE_DIR,'dataset/ShapeSet/image.png'))
 
 
-#getLayerPlot(1,'triangles',5)
+#getLayerPlot('square1', 1)
