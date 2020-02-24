@@ -1,74 +1,72 @@
-import glob
-import os
-
-import matplotlib
-from matplotlib import pyplot as plt
-import tensorflow as tf
 from tensorflow import keras
-import matplotlib.image as mpimg
+from keras.applications.vgg16 import VGG16, preprocess_input
+import matplotlib.pyplot as plt
+import json
+from keras.preprocessing.image import load_img, img_to_array
+from kerasvismaster.vis.visualization import visualize_saliency, visualize_activation
+from kerasvismaster.vis.utils import utils
+import os
 import numpy as np
-import imageio as im
-from keras import models
-from keras import applications
-from keras import backend as K
-from keras.preprocessing import image
-
 from UnderstandableAi.settings import BASE_DIR
-
-def getLayerPlot(img, layer):
-    model = keras.applications.VGG16(weights='imagenet', include_top = False)
-
-
-    img_path = os.path.join(BASE_DIR,
-                            'dataset/ResNetSet/' + str(img) + '.png')
-
-    img = image.load_img(img_path, target_size=(224, 224))
-
-    img_tensor = image.img_to_array(img)
-    img_tensor = np.expand_dims(img_tensor, axis=0)
-    img_tensor /= 255.
-
-    x = image.img_to_array(img)
-    x = np.expand_dims(x, axis=0)
-
-    layer_outputs = [layer.output for layer in model.layers][1:]
-
-    activation_model = keras.models.Model(inputs=model.input,
-                                    outputs=layer_outputs)  # Creates a model that will return these outputs, given the model input
-
-    activations = activation_model.predict(
-        img_tensor)  # Returns a list of five Numpy arrays: one array per layer activation
-
-    first_layer_activation = activations[0]
-    plt.matshow(first_layer_activation[0, :, :, 4], cmap='viridis')
-    layer_names = []
-    for layer in model.layers[:int(layer)]:
-        layer_names.append(layer.name)
-    images_per_row = 8
-    for layer_name, layer_activation in zip(layer_names, activations):  # Displays the feature maps
-        n_features = layer_activation.shape[-1]  # Number of features in the feature map
-        size = layer_activation.shape[1]  # The feature map has shape (1, size, size, n_features).
-        n_cols = n_features // images_per_row  # Tiles the activation channels in this matrix
-        display_grid = np.zeros((size * n_cols, images_per_row * size))
-        for col in range(n_cols):  # Tiles each filter into a big horizontal grid
-            for row in range(images_per_row):
-                channel_image = layer_activation[0,
-                                :, :,
-                                col * images_per_row + row]
-                channel_image -= channel_image.mean()  # Post-processes the feature to make it visually palatable
-                channel_image /= channel_image.std()
-                channel_image *= 64
-                channel_image += 128
-                channel_image = np.clip(channel_image, 0, 255).astype('uint8')
-                display_grid[col * size: (col + 1) * size,  # Displays the grid
-                row * size: (row + 1) * size] = channel_image
-        scale = 1. / size
-        plt.figure(figsize=(scale * display_grid.shape[1],
-                            scale * display_grid.shape[0]))
-        plt.title(layer_name)
-        plt.grid(False)
-        plt.imshow(display_grid, aspect='auto', cmap='viridis')
-    plt.savefig(os.path.join(BASE_DIR, 'dataset/ResNetSet/image.png'))
+from keras import backend as K
+from kerasvismaster.vis.visualization import visualize_cam
 
 
-#getLayerPlot('cat', 7)
+def getSaliency(img):
+    K.clear_session()
+
+    model = VGG16(weights='imagenet', include_top='False')
+
+    CLASS_INDEX = json.load(open(os.path.join(BASE_DIR, "dataset/ResNetSet/imagenet_class_index.json")))
+    classlabel = []
+    for i_dict in range(len(CLASS_INDEX)):
+        classlabel.append(CLASS_INDEX[str(i_dict)][1])
+    _img = load_img(os.path.join(BASE_DIR, 'dataset/ResNetSet/' + img + '.png'), target_size=(224, 224))
+    img = img_to_array(_img)
+    img = preprocess_input(img)
+    y_pred = model.predict(img[np.newaxis, ...])
+    class_idxs_sorted = np.argsort(y_pred.flatten())[::-1]
+    # topNclass = 5
+    # for i, idx in enumerate(class_idxs_sorted[:topNclass]):
+    #    print("Top {} predicted class:     Pr(Class={:18} [index={}])={:5.3f}".format(
+    #        i + 1, classlabel[idx], idx, y_pred[0, idx]))
+
+    layer_idx = utils.find_layer_idx(model, 'predictions')
+
+    model.layers[layer_idx].activation = keras.activations.linear
+    # model = utils.apply_modifications(model)
+
+    class_idx = class_idxs_sorted[0]
+
+    grad_top1 = visualize_saliency(model,
+                                   layer_idx,
+                                   filter_indices=class_idx,
+                                   seed_input=img[np.newaxis, ...],
+                                   backprop_modifier='guided')
+
+    grad_top2 = visualize_cam(model,
+                              layer_idx,
+                              filter_indices=class_idx,
+                              seed_input=img[np.newaxis, ...],
+                              backprop_modifier='guided')
+
+    def plot_map(grads, grads2):
+        plt.figure(figsize=(8,12))
+        plt.subplot(211)
+        plt.imshow(_img)
+        i = plt.imshow(grads, cmap="jet", alpha=0.8)
+        plt.colorbar(i)
+        plt.subplot(212)
+        plt.imshow(_img)
+        j = plt.imshow(grads2, cmap="jet", alpha=0.8)
+        plt.colorbar(j)
+        plt.suptitle("Pr(class={}) = {:5.2f}".format(
+            classlabel[class_idx],
+            y_pred[0, class_idx]), fontsize=20)
+        # plt.show()
+        plt.savefig(os.path.join(BASE_DIR, 'dataset/ResNetSet/image2.png'))
+    plot_map(grad_top1, grad_top2)
+    K.clear_session()
+
+
+getSaliency('a')
