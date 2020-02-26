@@ -63,4 +63,5 @@ def getLayerPlot(img, layer):
         plt.grid(False)
         plt.imshow(display_grid, aspect='auto', cmap='viridis')
     plt.savefig(os.path.join(BASE_DIR, 'dataset/ResNetSet/image.png'))
+    plt.close(1)
     K.clear_session()

@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io
 
+UnderstandableAI.setting.py
+
 bin/*
 bin/
 bin
@@ -95,4 +97,3 @@ local_settings.py
 
 .env
 db.sqlite3
-
