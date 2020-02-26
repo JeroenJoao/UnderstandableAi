@@ -66,7 +66,9 @@ def getSaliency(img):
         #plt.show()
         plt.savefig(os.path.join(BASE_DIR, 'dataset/ResNetSet/image2.png'))
     plot_map(grad_top1, grad_top2)
+    plt.close('all')
     K.clear_session()
+
 
 
 #getSaliency('a')

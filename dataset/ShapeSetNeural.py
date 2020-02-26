@@ -185,6 +185,8 @@ def getLayerPlot(img, layerNum):
         plt.grid(False)
         plt.imshow(display_grid, aspect='auto', cmap='viridis')
     plt.savefig(os.path.join(BASE_DIR,'dataset/ShapeSet/image.png'))
+    plt.close('all')
+
 
 
 #getLayerPlot('square1', 1)
