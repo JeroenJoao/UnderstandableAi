@@ -55,16 +55,18 @@ def getSaliency(img):
                                    backprop_modifier='guided')
 
     def plot_map(grads, grads2):
-        fig, axes = plt.subplots(2, 1, figsize=(7, 14))
-        axes[0].imshow(_img)
-        i = axes[0].imshow(grads, cmap="jet", alpha=0.8)
-        fig.colorbar(i)
-        axes[1].imshow(_img)
-        j = axes[1].imshow(grads2, cmap="jet", alpha=0.8)
-        #fig.colorbar(j)
+        plt.figure(figsize=(8, 12))
+        plt.subplot(211)
+        plt.imshow(_img)
+        i = plt.imshow(grads, cmap="jet", alpha=0.8)
+        plt.colorbar(i)
+        plt.subplot(212)
+        plt.imshow(_img)
+        j = plt.imshow(grads2, cmap="jet", alpha=0.8)
+        plt.colorbar(j)
         plt.suptitle("Pr(class={}) = {:5.2f}".format(
             classlabel[class_idx],
-            y_pred[0, class_idx]))
+            y_pred[0, class_idx]), fontsize=20)
         #plt.show()
         plt.savefig(os.path.join(BASE_DIR, 'dataset/ResNetSet/image2.png'))
         plt.close()
