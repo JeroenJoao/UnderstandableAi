@@ -1,5 +1,7 @@
 from tensorflow import keras
 from keras.applications.vgg16 import VGG16, preprocess_input
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import json
 from keras.preprocessing.image import load_img, img_to_array
@@ -65,10 +67,9 @@ def getSaliency(img):
             y_pred[0, class_idx]))
         #plt.show()
         plt.savefig(os.path.join(BASE_DIR, 'dataset/ResNetSet/image2.png'))
+        plt.close()
     plot_map(grad_top1, grad_top2)
-    plt.close('all')
     K.clear_session()
-
 
 
 #getSaliency('a')

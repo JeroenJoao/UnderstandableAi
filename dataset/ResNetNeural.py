@@ -1,4 +1,6 @@
 import os
+import matplotlib
+matplotlib.use('Agg')
 from matplotlib import pyplot as plt
 from tensorflow import keras
 import numpy as np
@@ -63,5 +65,5 @@ def getLayerPlot(img, layer):
         plt.grid(False)
         plt.imshow(display_grid, aspect='auto', cmap='viridis')
     plt.savefig(os.path.join(BASE_DIR, 'dataset/ResNetSet/image.png'))
-    plt.close('all')
+    plt.close()
     K.clear_session()

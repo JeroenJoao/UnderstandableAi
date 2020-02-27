@@ -1,5 +1,7 @@
 import glob
 import os
+import matplotlib
+matplotlib.use('Agg')
 from matplotlib import pyplot as plt
 import matplotlib.image as mpimg
 import numpy as np
@@ -185,8 +187,6 @@ def getLayerPlot(img, layerNum):
         plt.grid(False)
         plt.imshow(display_grid, aspect='auto', cmap='viridis')
     plt.savefig(os.path.join(BASE_DIR,'dataset/ShapeSet/image.png'))
-    plt.close('all')
-
-
+    plt.close()
 
 #getLayerPlot('square1', 1)

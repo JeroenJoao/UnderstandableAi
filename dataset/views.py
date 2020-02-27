@@ -1,7 +1,9 @@
 import os
-
+import queue
+import time
 from PIL import Image
 from django.http import JsonResponse, HttpResponse, HttpResponseNotFound
+from UnderstandableAi.settings import AVAILABLE
 
 from UnderstandableAi.settings import BASE_DIR
 from dataset import ShapeSetNeural
@@ -9,7 +11,49 @@ from dataset import ResNetNeural
 from dataset import saliency
 
 
-def index(request,dataset, picname, upload, layer, saliency):
+requestQueue = queue.Queue()
+
+
+class requestObject():
+
+    def __init__(self, request, dataset, picname, upload, layer, saliency):
+        self.request = request
+        self.dataset = dataset
+        self.picname = picname
+        self.upload = upload
+        self.layer = layer
+        self.saliency = saliency
+        self.response = HttpResponseNotFound
+
+    def handle(self):
+        self.response = solve(self.request,self.dataset, self.picname, self.upload, self.layer, self.saliency)
+
+    def getResponse(self):
+        return self.response
+
+
+
+def index(request, dataset, picname, upload, layer, saliency):
+    response = HttpResponseNotFound
+    time.sleep(0.1)
+    global AVAILABLE
+    if AVAILABLE:
+        AVAILABLE = False
+        req = requestObject(request, dataset, picname, upload, layer, saliency)
+        requestQueue.put(req)
+        response = executeRequest()
+    return response
+
+
+def executeRequest():
+    request = requestQueue.get()
+    response = solve(request.request, request.dataset, request.picname, request.upload, request.layer, request.saliency)
+    global AVAILABLE
+    AVAILABLE = True
+    return response
+
+
+def solve(request,dataset, picname, upload, layer, saliency):
     if upload == '1':
         picname = 'uploads/' + picname
     if dataset == 'shapeset':
