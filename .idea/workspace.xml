@@ -238,8 +238,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.Neural" />
       <item itemvalue="Python.views" />
+      <item itemvalue="Python.Neural" />
     </list>
     <recent_temporary>
       <list>
