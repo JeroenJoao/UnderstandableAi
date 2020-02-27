@@ -3,7 +3,6 @@ import queue
 import time
 from PIL import Image
 from django.http import JsonResponse, HttpResponse, HttpResponseNotFound
-from UnderstandableAi.settings import AVAILABLE
 
 from UnderstandableAi.settings import BASE_DIR
 from dataset import ShapeSetNeural
@@ -46,7 +45,7 @@ def index(request, dataset, picname, upload, layer, saliency):
         executeRequest()
         time.sleep(1)
 
-    return requestToResponse.get(request)
+    return requestToResponse.pop(request)
 
 
 def executeRequest():
