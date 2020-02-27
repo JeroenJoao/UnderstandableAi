@@ -3,7 +3,7 @@ import queue
 import time
 from PIL import Image
 from django.http import JsonResponse, HttpResponse, HttpResponseNotFound
-
+from UnderstandableAi.settings import AVAILABLE
 from UnderstandableAi.settings import BASE_DIR
 from dataset import ShapeSetNeural
 from dataset import ResNetNeural
