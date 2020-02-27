@@ -12,7 +12,7 @@ from dataset import saliency
 
 
 requestQueue = queue.Queue()
-
+requestToResponse = {}
 
 class requestObject():
 
@@ -34,23 +34,29 @@ class requestObject():
 
 
 def index(request, dataset, picname, upload, layer, saliency):
-    response = HttpResponseNotFound
-    time.sleep(0.1)
-    global AVAILABLE
-    if AVAILABLE:
-        AVAILABLE = False
-        req = requestObject(request, dataset, picname, upload, layer, saliency)
-        requestQueue.put(req)
-        response = executeRequest()
-    return response
+    req = requestObject(request, dataset, picname, upload, layer, saliency)
+    requestQueue.put(req)
+    requestToResponse[request] = None
+    while requestToResponse.get(request) == None:
+        k = 0
+        for i in list(requestToResponse.values()):
+            if i == None:
+                k += 1
+        print(k)
+        executeRequest()
+        time.sleep(1)
+
+    return requestToResponse.get(request)
 
 
 def executeRequest():
-    request = requestQueue.get()
-    response = solve(request.request, request.dataset, request.picname, request.upload, request.layer, request.saliency)
     global AVAILABLE
-    AVAILABLE = True
-    return response
+    if AVAILABLE:
+        AVAILABLE = False
+        request = requestQueue.get()
+        response = solve(request.request, request.dataset, request.picname, request.upload, request.layer, request.saliency)
+        AVAILABLE = True
+        requestToResponse[request.request] = response
 
 
 def solve(request,dataset, picname, upload, layer, saliency):
