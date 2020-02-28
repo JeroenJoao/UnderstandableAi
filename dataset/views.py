@@ -37,14 +37,8 @@ def index(request, dataset, picname, upload, layer, saliency):
     requestQueue.put(req)
     requestToResponse[request] = None
     while requestToResponse.get(request) == None:
-        k = 0
-        for i in list(requestToResponse.values()):
-            if i == None:
-                k += 1
-        print(k)
         executeRequest()
         time.sleep(1)
-
     return requestToResponse.pop(request)
 
 
