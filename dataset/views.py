@@ -53,7 +53,10 @@ def executeRequest():
     if AVAILABLE:
         AVAILABLE = False
         request = requestQueue.get()
-        response = solve(request.request, request.dataset, request.picname, request.upload, request.layer, request.saliency)
+        try:
+            response = solve(request.request, request.dataset, request.picname, request.upload, request.layer, request.saliency)
+        except:
+            response = HttpResponseNotFound
         AVAILABLE = True
         requestToResponse[request.request] = response
 
