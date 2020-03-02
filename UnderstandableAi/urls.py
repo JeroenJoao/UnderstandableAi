@@ -23,7 +23,6 @@ from rest_framework_api_key.permissions import HasAPIKey
 
 
 urlpatterns = [
-
     path('dataset/<dataset>/<upload>/<layer>/<picname>/<saliency>/', dataset.views.index),
     path('upload/', FileView.as_view()),
     path('admin/', admin.site.urls),
