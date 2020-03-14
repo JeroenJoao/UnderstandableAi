@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "rest_framework_api_key",
     'dataset',
     'upload',
+    'netupload'
     'corsheaders',
 ]
 

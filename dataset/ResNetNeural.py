@@ -67,3 +67,5 @@ def getLayerPlot(img, layer):
     plt.savefig(os.path.join(BASE_DIR, 'dataset/ResNetSet/image.png'))
     plt.close()
     K.clear_session()
+
+getLayerPlot("cat", 20)
