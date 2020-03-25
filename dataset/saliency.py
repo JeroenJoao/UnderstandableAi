@@ -22,7 +22,7 @@ def getSaliency(img):
     classlabel = []
     for i_dict in range(len(CLASS_INDEX)):
         classlabel.append(CLASS_INDEX[str(i_dict)][1])
-    _img = load_img(os.path.join(BASE_DIR, 'dataset/ResNetSet/' + img + '.png'), target_size=(224, 224))
+    _img = load_img(os.path.join(BASE_DIR, 'dataset/' + img + '.png'), target_size=(224, 224))
     img = img_to_array(_img)
     img = preprocess_input(img)
     y_pred = model.predict(img[np.newaxis, ...])

@@ -8,20 +8,24 @@ from UnderstandableAi.settings import BASE_DIR
 from dataset import ShapeSetNeural
 from dataset import ResNetNeural
 from dataset import saliency
-
+from dataset import CustomSaliency
+from dataset import CustomLayer
 
 requestQueue = queue.Queue()
 requestToResponse = {}
 
 class requestObject():
 
-    def __init__(self, request, dataset, picname, upload, layer, saliency):
+    def __init__(self, request, dataset, picname, upload, layer, saliency, size, grad1, grad2):
         self.request = request
         self.dataset = dataset
         self.picname = picname
         self.upload = upload
         self.layer = layer
         self.saliency = saliency
+        self.size = size
+        self.grad1 = grad1
+        self.grad2 = grad2
         self.response = HttpResponseNotFound
 
     def handle(self):
@@ -32,8 +36,8 @@ class requestObject():
 
 
 
-def index(request, dataset, picname, upload, layer, saliency):
-    req = requestObject(request, dataset, picname, upload, layer, saliency)
+def index(request, dataset, picname, upload, layer, saliency, size, grad1, grad2):
+    req = requestObject(request, dataset, picname, upload, layer, saliency, size, grad1, grad2)
     requestQueue.put(req)
     requestToResponse[request] = None
     while requestToResponse.get(request) == None:
@@ -47,23 +51,54 @@ def executeRequest():
     if AVAILABLE:
         AVAILABLE = False
         request = requestQueue.get()
-        try:
-            response = solve(request.request, request.dataset, request.picname, request.upload, request.layer, request.saliency)
-        except:
-            response = HttpResponseNotFound
+
+        response = solve(request.request, request.dataset, request.picname, request.upload, request.layer,
+                             request.saliency, request.size, request.grad1, request.grad2)
+
         AVAILABLE = True
         requestToResponse[request.request] = response
 
 
-def solve(request,dataset, picname, upload, layer, saliency):
+def solve(request,dataset, picname, upload, layer, saliency, size, grad1, grad2):
     if upload == '1':
         picname = 'uploads/' + picname
     if dataset == 'shapeset':
         response = shapeSet(picname, layer, saliency)
     elif dataset == 'imagenet':
         response = ImageNet(picname, layer, saliency)
+    elif dataset == 'custom':
+        response = customNet(picname, layer, saliency, size, grad1, grad2)
     else:
         response = HttpResponseNotFound()
+    return response
+
+
+def customNet(img, layer, saliency, size, grad1, grad2):
+    if saliency == '1':
+        response = responseCustSal(img, size, grad1, grad2)
+    else:
+        if (layer == '0'):
+            response = responseNormalImageNet(img)
+        else:
+            response = responseCustLayer(img, layer, size)
+    return response
+
+
+def responseCustSal(img, size, grad1, grad2):
+    CustomSaliency.getSaliency(img, size, grad1, grad2)
+    response = HttpResponse(content_type="image/png")
+    img = Image.open(
+        os.path.join(BASE_DIR, 'dataset/CusNet/image2.png'))
+    img.save(response, 'png')
+    return response
+
+
+def responseCustLayer(img, layer, size):
+    CustomLayer.getLayerPlot(img, layer, size)
+    response = HttpResponse(content_type="image/png")
+    img = Image.open(
+        os.path.join(BASE_DIR, 'dataset/CusNet/image.png'))
+    img.save(response, 'png')
     return response
 
 
@@ -90,7 +125,7 @@ def responseSaliency(img):
 def responseNormalImageNet(img):
     response = HttpResponse(content_type="image/png")
     img = Image.open(
-        os.path.join(BASE_DIR, 'dataset/ResNetSet/' + str(img) + '.png'))
+        os.path.join(BASE_DIR, 'dataset/' + str(img) + '.png'))
     img.save(response, 'png')
     return response
 

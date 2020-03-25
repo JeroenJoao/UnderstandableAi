@@ -2,24 +2,35 @@ import os
 import matplotlib
 matplotlib.use('Agg')
 from matplotlib import pyplot as plt
-from tensorflow import keras
 import numpy as np
-from keras import backend as K
-
+from tensorflow import keras
 from keras.preprocessing import image
-
+from keras.models import model_from_json
 from UnderstandableAi.settings import BASE_DIR
-
-def getLayerPlot(img, layer):
-    K.clear_session()
-    model = keras.applications.VGG16(weights='imagenet', include_top = 'False')
+from kerasvismaster.vis.visualization import activation_maximization
 
 
-    img_path = os.path.join(BASE_DIR,
-                            'dataset/' + str(img) + '.png')
+def loadModel():
+    path_model = os.path.join(BASE_DIR, 'netupload/uploads/model_architecture.json')
+    model = model_from_json(open(path_model).read())
+    path_weights = os.path.join(BASE_DIR, 'netupload/uploads/model_weights.h5')
+    model.load_weights(path_weights)
+    model.compile(optimizer = 'rmsprop',
+                       loss = 'categorical_crossentropy',
+                       metrics = ['accuracy'])
+    return model
 
-    img = image.load_img(img_path, target_size=(224, 224))
 
+def getLayerPlot(img, layerNum, size):
+    model = loadModel()
+
+    img_path = os.path.join(BASE_DIR, 'dataset/' + img + '.png')
+
+    activation_maximization.visualize_activation(model, 1)
+
+    '''
+    
+    img = image.load_img(img_path, target_size=(int(size), int(size)))
     img_tensor = image.img_to_array(img)
     img_tensor = np.expand_dims(img_tensor, axis=0)
     img_tensor /= 255.
@@ -27,20 +38,21 @@ def getLayerPlot(img, layer):
     x = image.img_to_array(img)
     x = np.expand_dims(x, axis=0)
 
-    layer_outputs = [layer.output for layer in model.layers][1:]
-
-    activation_model = keras.models.Model(inputs=model.input,
-                                    outputs=layer_outputs)  # Creates a model that will return these outputs, given the model input
-
-    activations = activation_model.predict(
-        img_tensor)  # Returns a list of five Numpy arrays: one array per layer activation
-
+    layer_outputs = [layer.output for layer in model.layers][1:] # Extracts the outputs of the top 12 layers
+    print(layer_outputs)
+    activation_model = keras.models.Model(inputs=model.input, outputs=layer_outputs) # Creates a model that will return these outputs, given the model input
+    activations = activation_model.predict(img_tensor) # Returns a list of five Numpy arrays: one array per layer activation
     first_layer_activation = activations[0]
+
     plt.matshow(first_layer_activation[0, :, :, 4], cmap='viridis')
+
     layer_names = []
-    for layer in model.layers[:int(layer)]:
-        layer_names.append(layer.name)
+    for layer in model.layers[:int(layerNum)]:
+        layer_names.append(layer.name)  # Names of the layers, so you can have them as part of your plot
+
+    #print(layer_names)
     images_per_row = 8
+
     for layer_name, layer_activation in zip(layer_names, activations):  # Displays the feature maps
         n_features = layer_activation.shape[-1]  # Number of features in the feature map
         size = layer_activation.shape[1]  # The feature map has shape (1, size, size, n_features).
@@ -64,8 +76,8 @@ def getLayerPlot(img, layer):
         plt.title(layer_name)
         plt.grid(False)
         plt.imshow(display_grid, aspect='auto', cmap='viridis')
-    plt.savefig(os.path.join(BASE_DIR, 'dataset/ResNetSet/image.png'))
+    plt.savefig(os.path.join(BASE_DIR,'dataset/CusNet/image.png'))
     plt.close()
-    K.clear_session()
+    '''
 
-#getLayerPlot("cat", 20)
+getLayerPlot('uploads/cat', 1, 28)

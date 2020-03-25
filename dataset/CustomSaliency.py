@@ -16,10 +16,10 @@ from keras import backend as K
 from kerasvismaster.vis.visualization import visualize_cam
 
 
-def loadModel(path_model):
-    #path_model = os.path.join(BASE_DIR, 'dataset/ShapeSet/model_architecture.json')
+def loadModel():
+    path_model = os.path.join(BASE_DIR, 'netupload/uploads/model_architecture.json')
     model = model_from_json(open(path_model).read())
-    path_weights = os.path.join(BASE_DIR, 'dataset/ShapeSet/model_weights.h5')
+    path_weights = os.path.join(BASE_DIR, 'netupload/uploads/model_weights.h5')
     model.load_weights(path_weights)
     model.compile(optimizer = 'rmsprop',
                        loss = 'categorical_crossentropy',
@@ -27,17 +27,16 @@ def loadModel(path_model):
     return model
 
 
-def getSaliency(img, path_model, size, layer_idx_grad1, layer_idx_grad2):
+def getSaliency(img, size, layer_idx_grad1, layer_idx_grad2):
     K.clear_session()
+    model = loadModel()
 
-    model = loadModel(path_model)
-
-    CLASS_INDEX = json.load(open(os.path.join(BASE_DIR, "dataset/ShapeSet/classes.json")))
+    CLASS_INDEX = json.load(open(os.path.join(BASE_DIR, "netupload/uploads/classes.json")))
     classlabel = []
     for i_dict in range(len(CLASS_INDEX)):
         classlabel.append(CLASS_INDEX[str(i_dict)])
 
-    _img = load_img(os.path.join(BASE_DIR, 'dataset/ShapeSet/shapes/' + img + '.png'), target_size=(size, size))
+    _img = load_img(os.path.join(BASE_DIR, 'dataset/' + img + '.png'), target_size=(int(size), int(size)))
     img = img_to_array(_img)
     img = preprocess_input(img)
     y_pred = model.predict(img[np.newaxis, ...])
@@ -48,21 +47,21 @@ def getSaliency(img, path_model, size, layer_idx_grad1, layer_idx_grad2):
     #        i + 1, classlabel[idx], idx, y_pred[0, idx]))
 
 
-    model.layers[layer_idx_grad1].activation = keras.activations.linear
-    model.layers[layer_idx_grad2].activation = keras.activations.linear
+    model.layers[int(layer_idx_grad1)].activation = keras.activations.linear
+    model.layers[int(layer_idx_grad2)].activation = keras.activations.linear
 
     # model = utils.apply_modifications(model)
 
     class_idx = class_idxs_sorted[0]
 
     grad_top1 = visualize_saliency(model,
-                                   layer_idx_grad1,
+                                   int(layer_idx_grad1),
                                    filter_indices=class_idx,
                                    seed_input=img[np.newaxis, ...],
                                    backprop_modifier='guided')
 
     grad_top2 = visualize_cam(model,
-                              layer_idx_grad2,
+                              int(layer_idx_grad2),
                               filter_indices=class_idx,
                               seed_input=img[np.newaxis, ...],
                               backprop_modifier='guided')
@@ -81,10 +80,10 @@ def getSaliency(img, path_model, size, layer_idx_grad1, layer_idx_grad2):
             classlabel[class_idx],
             y_pred[0, class_idx]), fontsize=20)
         # plt.show()
-        plt.savefig(os.path.join(BASE_DIR, 'dataset/ResNetSet/image2.png'))
+        plt.savefig(os.path.join(BASE_DIR, 'dataset/CusNet/image2.png'))
         plt.close()
 
     plot_map(grad_top1, grad_top2)
     K.clear_session()
 
-getSaliency('circle2', 28, 15, 8)
+#getSaliency('uploads/cat', '28', '15', '8')

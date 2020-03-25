@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 import dataset.views
+from netupload.views import NetView
 from upload.views import FileView
 from rest_framework.views import APIView
 from rest_framework_api_key.permissions import HasAPIKey
@@ -23,8 +24,8 @@ from rest_framework_api_key.permissions import HasAPIKey
 
 
 urlpatterns = [
-    path('dataset/<dataset>/<upload>/<layer>/<picname>/<saliency>/', dataset.views.index),
-    path('netupload/', FileView.as_view()),
+    path('dataset/<dataset>/<upload>/<layer>/<picname>/<saliency>/<size>/<grad1>/<grad2>', dataset.views.index),
+    path('netupload/', NetView.as_view()),
     path('upload/', FileView.as_view()),
     path('admin/', admin.site.urls),
 ]

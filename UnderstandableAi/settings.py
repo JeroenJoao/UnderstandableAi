@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     "rest_framework_api_key",
     'dataset',
     'upload',
-    'netupload'
+    'netupload',
     'corsheaders',
 ]
 
@@ -147,7 +147,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'dataset/ResNetSet/uploads/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'netupload/uploads/')
 
 MEDIA_URL = '/media/'
 
