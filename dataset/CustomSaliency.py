@@ -86,4 +86,4 @@ def getSaliency(img, size, layer_idx_grad1, layer_idx_grad2):
     plot_map(grad_top1, grad_top2)
     K.clear_session()
 
-#getSaliency('uploads/cat', '28', '15', '8')
+getSaliency('uploads/cat', '28', '15', '8')
